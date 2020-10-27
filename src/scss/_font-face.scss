@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Lalezar';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lalezar'),
+        local('Lalezar-Regular'),
+        url(/../fonts/Lalezar-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dejavu Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Dejavu Sans'),
+        local('Dejavu-Sans-Regular'),
+        url(/../fonts/DejaVuSans.ttf) format('truetype');
+}
