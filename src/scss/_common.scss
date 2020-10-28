@@ -1,0 +1,56 @@
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: $moderate-pink;
+    font-family: 'Dejavu Sans', monospace;
+    @include flex-layout(column)
+}
+
+.h1 {
+    @include heading(48px, $moderate-pink, $white);
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.h2 {
+    @include heading(32px, $moderate-pink, $white);
+}
+
+.h3 {
+    @include heading(22px, transparent, $moderate-pink);
+}
+
+.h4 {
+    @include heading(22px, transparent, $white);
+}
+
+.h5 {
+    @include heading(18px, transparent, $moderate-pink);
+}
+
+.top-bar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    width: 100%;
+    padding: 5px 40px;
+
+    img {
+        height: 60px;
+        width: auto;
+    }
+}
+
+.main {
+    background: $white;
+    .sheep-page {
+        @include flex-layout();
+        justify-content: space-between;
+    }
+}

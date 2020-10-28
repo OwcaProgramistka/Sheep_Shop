@@ -6,12 +6,10 @@
       <shopping-cart></shopping-cart>
     </header>
     <main>
-    <div class="sheep-collection">
       <h1 class="h1">Sheep Collection</h1>
-      <div class="wrapper">
+    <div class="sheep-page sheep-collection">
         <products-filter></products-filter>
         <products></products>
-      </div>
     </div>
     </main>
     <footer></footer>
@@ -37,5 +35,11 @@ export default {
 </script>
 
 <style lang='scss'>
-@import "./scss/style.scss";
+@import './scss/reset.scss';
+@import './scss/variables.scss';
+@import './scss/mixins.scss';
+@import './scss/font-face.scss';
+@import './scss/common.scss';
+@import './scss/media-queries.scss';
+
 </style>

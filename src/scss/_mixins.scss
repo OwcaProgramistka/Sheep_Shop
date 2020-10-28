@@ -1,0 +1,12 @@
+@mixin heading($font-size, $background, $font-color) {
+    font-family: 'Lalezar', monospace;
+    font-size: $font-size;
+    background: $background;
+    color: $font-color;
+}
+
+@mixin flex-layout($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+}

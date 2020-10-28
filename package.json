@@ -1,5 +1,5 @@
 {
-  "name": "panda_shop",
+  "name": "sheep_shop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,7 +24,8 @@
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",
     "serve": "^11.3.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.0.0"
   },
   "eslintConfig": {
     "root": true,

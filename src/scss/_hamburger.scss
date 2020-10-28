@@ -49,6 +49,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
       background-color: $hamburger-active-layer-color;
     }
   }
+
   .hamburger__button-inner {
     transition-duration: 0.075s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -92,12 +93,12 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
     display: inline-block;
     position: relative;
   }
-  
+
   &-inner {
     display: block;
     top: 50%;
     margin-top: $hamburger-layer-height / -2;
-  
+
     &,
     &::before,
     &::after {
@@ -110,19 +111,47 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
       transition-duration: 0.15s;
       transition-timing-function: ease;
     }
-  
+
     &::before,
     &::after {
       content: "";
       display: block;
     }
-  
+
     &::before {
       top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
     }
-  
+
     &::after {
       bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
     }
+  }
+}
+
+.hamburger__button {
+  margin-left: -15px;
+  position: relative;
+  z-index: 3;
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  box-sizing: border-box;
+  left: - $menu-width-d;
+  position: absolute;
+  width: $menu-width-d;
+  height: $menu-height;
+  background: $moderate-pink;
+  transition: left 500ms;
+  padding: 40px 20px 0 40px;
+
+  li {
+    margin: 50px 0;
+  }
+
+  &--slide {
+    left: 0;
+    transition: left 500ms;
   }
 }
