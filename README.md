@@ -1,21 +1,23 @@
-# panda_shop Project setup 🌈💻✨
+# sheep_shop Project setup 🐑🌈💻✨
 
-### Downloads all needed dependencies
+### Download needed dependencies
 ```
-npm install
-```
-
-
-### Compiles and minifies for production
-```
-npm run panda_shop
+npm install 
+cd server //  <-enter the server folder
+npm install // <- install all server dependencies
 ```
 
-
-### Serves production files on localhost:5000
+### Run local server
 ```
-serve dist
+npm run server // <- you are still in sheep_shop/server/ folder
+cd ../ //<- now get back to main folder (sheep_shop/)
+
 ```
 
-##### PS: Remember you have to have active backend server with used products💥❗
+### Serve production files on localhost:5000
+```
+npm run sheep_shop
+```
+
+### Open your browser and go to 'localhost:5000'
 

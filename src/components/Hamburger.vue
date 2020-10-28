@@ -1,21 +1,19 @@
 <template>
-  <div class="hamburger-wrapper">
+  <div class="hamburger">
     <button
       @click="active = !active"
-      class="hamburger hamburger--squeeze"
-      :class="isActive('is-active')"
-      type="button"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
+      class="hamburger__button"
+      :class="isActive('hamburger__button--is-active')"
+      type="button">
+      <span class="hamburger__button-box">
+        <span class="hamburger__button-inner"></span>
       </span>
     </button>
-    <div :class="isActive('slide')" class="menu">
+    <div :class="isActive('menu--slide')" class="menu">
       <ul>
         <li v-for="menuItem in menuList" :key="menuItem.position">
           <a :href="menuItem.link"
-            ><h2>{{ menuItem.position }}</h2></a
-          >
+            ><p class="h2">{{ menuItem.position }}</p></a>
         </li>
       </ul>
     </div>

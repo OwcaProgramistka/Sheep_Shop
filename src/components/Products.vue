@@ -1,41 +1,33 @@
 <template>
   <div class="products">
-    <ul>
+    <ul class="products__list">
       <li
-        v-show="filter(product.attributes.colors)"
         class="product"
+        v-show="filter(product.attributes.colors)"
         v-for="product in products"
         :key="product.id"
       >
         <div class="product-inner">
-          <div class="picture-wrapper">
-            <div class="product-picture">
+            <figure class="product-picture">
               <img
                 :alt="product.title"
                 style="height: 290px"
                 :src="productImgURL(product.images.thumbnail)"
               />
-            </div>
-            <div class="sale-badge" v-if="product.prices.after_discount">
-              <img src="../../public/images/sale.svg" />
-            </div>
-          </div>
-          <div class="add-wrapper">
+              <img class="sale-badge" v-if="product.prices.after_discount" src="../../public/images/sale.svg" />
+            </figure>
             <button @click="addToCart(product.id)" class="add-to-cart">
-              <h4>Add to cart</h4>
+              <p class="h4">Add to cart</p>
             </button>
-            <div>
-              <div class="product-title">{{ product.title }}</div>
-              <div class="product-price">
+            <div class="product-info">
+              <p class="product-title">{{ product.title }}</p>
+              <p class="product-price">
                 <span :class="oldPrice(product.prices.after_discount)">
-                  {{ product.currency }}{{ product.prices.base }}</span
-                >
+                  {{ product.currency }}{{ product.prices.base }}</span>
                 <span v-if="product.prices.after_discount">
-                  {{ product.currency }}{{ product.prices.after_discount }}
-                </span>
-              </div>
+                  {{ product.currency }}{{ product.prices.after_discount }}</span>
+              </p>
             </div>
-          </div>
         </div>
       </li>
     </ul>

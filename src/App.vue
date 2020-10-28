@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <div class="top-bar">
+    <header class="top-bar">
       <hamburger></hamburger>
       <a href="#"><img src="../public/images/logo.svg" /></a>
       <shopping-cart></shopping-cart>
-    </div>
-    <div class="panda-collection">
-      <h1>Panda Collection</h1>
+    </header>
+    <main>
+    <div class="sheep-collection">
+      <h1 class="h1">Sheep Collection</h1>
       <div class="wrapper">
         <products-filter></products-filter>
         <products></products>
       </div>
     </div>
+    </main>
+    <footer></footer>
   </div>
 </template>
 

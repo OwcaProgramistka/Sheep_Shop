@@ -1,10 +1,9 @@
 <template>
-  <div class="products-filter-wrapper">
     <div class="products-filter">
-      <div class="underline">
-        <h3>Filter by</h3>
+      <div @click="active = !active" class="products-filter__heading">
+        <p class="h3">Filter by</p>
         <div
-          @click="active = !active"
+          
           :class="isActive('opened')"
           class="circle-plus closed"
         >
@@ -14,12 +13,11 @@
           </div>
         </div>
       </div>
-      <div class="filter-list-wrapper" :class="isActive('rolldown')">
-        <h5>Color</h5>
+      <div class="products-filter__list" :class="isActive('products-filter__list--rolldown')">
+        <p class="h5">Color</p>
         <ul>
           <li v-for="color in colorVariants" :key="color.name">
             <input
-              class="checkbox"
               v-model="color.checked"
               @change="inputChecked(color.checked, color.value)"
               type="checkbox"
@@ -28,14 +26,12 @@
               :name="color.name"
             />
             <label class="label-for-check" :for="color.name"
-              ><div :style="{ background: color.sample }" class="sample"></div>
-              {{ color.name }}</label
-            >
+              ><p :style="{ background: color.sample }" class="sample"></p>
+              {{ color.name }}</label>
           </li>
         </ul>
       </div>
     </div>
-  </div>
 </template>
 
 <script>

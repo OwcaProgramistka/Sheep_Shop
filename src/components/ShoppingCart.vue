@@ -1,12 +1,10 @@
 <template>
   <div class="shopping-cart">
-    <div
-      :style="{ visibility: productsQuantityVisibility() }"
-      class="products-quantity"
-    >
-      <div>{{ shoppingList.length }}</div>
+    <div class="shopping-cart__products-quantity"
+      :style="{ visibility: productsQuantityVisibility() }" >
+      <p>{{ shoppingList.length }}</p>
     </div>
-    <img src="../../public/images/shopping-cart.svg" />
+    <img class="shopping-cart__img" src="../../public/images/shopping-cart.svg" />
   </div>
 </template>
 
