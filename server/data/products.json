@@ -1,0 +1,88 @@
+[
+  {
+    "id": 4821,
+    "title": "Product Pastel Yellow 1",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductPastelYellow01.jpg"
+    },
+    "prices": {
+      "base": 20
+    },
+    "attributes": {
+      "colors": "yellow"
+    }
+  },
+  {
+    "id": 4823,
+    "title": "Product Blue 1",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductBlue01.jpg"
+    },
+    "prices": {
+      "base": 20
+    },
+    "attributes": {
+      "colors": "blue"
+    }
+  },
+  {
+    "id": 4825,
+    "title": "Product Mint 1",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductMint01.jpg"
+    },
+    "prices": {
+      "base": 38
+    },
+    "attributes": {
+      "colors": "mint"
+    }
+  },
+  {
+    "id": 4721,
+    "title": "Product Lime Green 1",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductLimeGreen.jpg"
+    },
+    "prices": {
+      "base": 38,
+      "after_discount": 36
+    },
+    "attributes": {
+      "colors": "lime"
+    }
+  },
+  {
+    "id": 4991,
+    "title": "Product Blue 2",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductBlue02.jpg"
+    },
+    "prices": {
+      "base": 38
+    },
+    "attributes": {
+      "colors": "blue"
+    }
+  },
+  {
+    "id": 5991,
+    "title": "Product Pastel Yellow 2",
+    "currency": "£",
+    "images": {
+      "thumbnail": "/ProductPastelYellow02.jpg"
+    },
+    "prices": {
+      "base": 66,
+      "after_discount": 55
+    },
+    "attributes": {
+      "colors": "yellow"
+    }
+  }
+]

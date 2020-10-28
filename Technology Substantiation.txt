@@ -1,0 +1,15 @@
+--- See: overview.html, Requirements no. 13 ---
+
+Your answer:
+...
+To build the requested website I used Vue.js framework. 
+It works great when building dynamic user interfaces and helps a lot with making applications ready to be further developed in the future.
+Vue offers detailed documentation and the community is eager to share it's knowledge with others. 
+While planning bigger project it's a good idea to decide to work with Vue CLI (command-line interface). 
+It offers creating basic project with packets ready-to-use. 
+Usually setting up the project and configuring it may take many hours, but thanks to Vue CLI, it takes just a while.
+Although I use Gulp when working with smaller projects, the effectiveness of my work made me choose Vue CLI with configured webpack.
+When moving the project from development mode to production, 
+Webpack and Babel minify files, compile the code and transpile it to work with older browsers automatically. 
+To style the webpage I used Sass preprocessor. 
+In the past I worked with both Sass and Less, and even though I don't feel any major difference between them, I prefer to use Sass.
