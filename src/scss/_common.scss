@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 15px;
-    color: $moderate-pink;
+    color: $black;
     font-family: 'Dejavu Sans', monospace;
     @include flex-layout(column)
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .h3 {
-    @include heading(22px, transparent, $moderate-pink);
+    @include heading(22px, transparent, $black);
 }
 
 .h4 {
@@ -30,7 +30,7 @@ body {
 }
 
 .h5 {
-    @include heading(18px, transparent, $moderate-pink);
+    @include heading(18px, transparent, $black);
 }
 
 .top-bar {

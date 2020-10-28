@@ -35,11 +35,12 @@ export default {
 </script>
 
 <style lang='scss'>
-@import './scss/reset.scss';
-@import './scss/variables.scss';
-@import './scss/mixins.scss';
-@import './scss/font-face.scss';
+// @import './scss/reset.scss';
+// @import './scss/variables.scss';
+// @import './scss/mixins.scss';
+// @import './scss/font-face.scss';
 @import './scss/common.scss';
-@import './scss/media-queries.scss';
+// @import './scss/media-queries.scss';
+
 
 </style>

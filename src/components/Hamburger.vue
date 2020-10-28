@@ -45,12 +45,12 @@ export default {
 </script>
 
 <style lang='scss'>
-@import '../scss/reset.scss';
-@import '../scss/variables.scss';
-@import '../scss/font-face.scss';
-@import '../scss/mixins.scss';
-@import '../scss/common.scss';
+// @import '../scss/reset.scss';
+// @import '../scss/variables.scss';
+// @import '../scss/font-face.scss';
+// @import '../scss/mixins.scss';
+// @import '../scss/common.scss';
 @import '../scss/hamburger.scss';
-@import '../scss/media-queries.scss';
+// @import '../scss/media-queries.scss';
 
 </style>
